@@ -107,6 +107,10 @@ nav {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.icon-item + .icon-item {
+  margin-top: 1.5rem;
+}
+
 /* Header */
 
 .header {
@@ -156,7 +160,7 @@ nav {
 }
 
 .search-input:focus {
-  border-color: #3b82f6;
+  border-color: var(--blue);
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
 }
 
@@ -190,7 +194,6 @@ nav {
 .greeting small {
   display: block;
   font-size: 0.75rem;
-  color: #6b7280;
   line-height: 1;
 }
 
@@ -227,10 +230,10 @@ nav {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: cover;
 }
 
 /* Action buttons */
+
 .header-actions {
   display: flex;
   gap: 1rem;
@@ -310,6 +313,10 @@ nav {
 }
 
 /* Announcements */
+
+aside {
+  padding-right: 1rem;
+}
 
 .announcements {
   background: #fff;
@@ -391,7 +398,7 @@ nav {
 
 .trending-user:hover,
 .trending-user:focus {
-  color: #0066cc;
+  color: var(--blue);
   outline: none;
 }
 
@@ -400,6 +407,7 @@ nav {
 }
 
 /* Avatar*/
+
 .avatar {
   background-color: #ffd700;
   border-radius: 50%;
@@ -413,8 +421,4 @@ nav {
 .avatar img {
   border-radius: 50%;
   display: block;
-}
-
-aside {
-  padding-right: 1rem;
 }
